@@ -38,7 +38,8 @@ class COCODataset(Dataset):
         """
         super().__init__(img_size)
         if data_dir is None:
-            data_dir = os.path.join(get_yolox_datadir(), "COCO")
+            # data_dir = os.path.join(get_yolox_datadir(), "COCO")
+            data_dir = get_yolox_datadir()
         self.data_dir = data_dir
         self.json_file = json_file
 
